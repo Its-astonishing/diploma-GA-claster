@@ -44,4 +44,4 @@ private:
 };
 }
 
-#endif GA_MATRIX_HPP
+#endif // GA_MATRIX_HPP

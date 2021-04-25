@@ -1,8 +1,7 @@
 #include "ga.hpp"
 
-namespace {
-template <class matrix_element>
-void perform_clasterization(attributed_graph<matrix_element> graph,
+namespace ga {
+void perform_clasterization(attributed_graph graph,
                             matrix<double> transition_matrix,
                             uint32_t number_of_clasters,
                             double restart_probability,

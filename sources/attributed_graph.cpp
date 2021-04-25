@@ -61,5 +61,7 @@ std::vector<std::vector<vertix>> attributed_graph::
             }
         }
     }
+
+    return result_paths;
 }
 }

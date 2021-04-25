@@ -1,12 +1,10 @@
 #ifndef GA_HPP
 #define GA_HPP
 
-#include "sources/attributed_graph.hpp"
+#include "attributed_graph.hpp"
 
 namespace ga {
-
-template <class matrix_element>
-void perform_clasterization(attributed_graph<matrix_element> graph,
+void perform_clasterization(attributed_graph graph,
                             matrix<double> transition_matrix,
                             uint32_t number_of_clasters,
                             double restart_probability,
@@ -14,4 +12,4 @@ void perform_clasterization(attributed_graph<matrix_element> graph,
 
 };
 
-#endif GA_HPP
+#endif // GA_HPP

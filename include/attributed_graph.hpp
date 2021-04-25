@@ -24,4 +24,4 @@ private:
 };
 }
 
-#endif GA_ATTRIBUTED_GRAPH_HPP
+#endif // GA_ATTRIBUTED_GRAPH_HPP
