@@ -1,8 +1,8 @@
 #include <iostream>
 #include "ga.hpp"
-
+#include "gtest/gtest.h"
 
 int main(int argc, char *argv[]) {
-
-    return 0u;
+    testing::InitGoogleTest(&argc, argv);
+    return RUN_ALL_TESTS();
 }
