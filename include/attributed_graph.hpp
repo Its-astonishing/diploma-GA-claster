@@ -15,6 +15,9 @@ private:
     std::vector<std::vector<vertix>> find_paths_length_less_than(vertix &first,
                                                                  vertix &second,
                                                                  uint32_t max_length);
+
+    bool path_contains_vertix(std::vector<vertix> &path, vertix &vertix_to_find);
+
     matrix<uint32_t> adjacency_matrix;
     matrix<std::vector<double>> attribute_matrix;
 

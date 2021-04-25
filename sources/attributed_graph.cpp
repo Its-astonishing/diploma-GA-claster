@@ -16,7 +16,7 @@ std::vector<vertix> attributed_graph::get_adjacent_vertixes(vertix v) {
 
 bool attributed_graph::path_contains_vertix(std::vector<vertix> &path, vertix &vertix_to_find) {
     for (auto &vertix_in_path : path) {
-        if (vartix_in_path == vertix_to_find) {
+        if (vertix_in_path == vertix_to_find) {
             return true;
         }
     }
@@ -54,7 +54,11 @@ std::vector<std::vector<vertix>> attributed_graph::
         auto adj_vertixes = get_adjacent_vertixes(current_path.back());
 
         for (auto &current_vertix : adj_vertixes) {
-            if ()
+            if (!path_contains_vertix(current_path, current_path.back())) {
+                std::vector<vertix> new_path(current_path);
+                new_path.push_back(current_vertix);
+                paths_queue.push(new_path);
+            }
         }
     }
 }
